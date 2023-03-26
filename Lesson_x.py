@@ -1,6 +1,14 @@
-f = open("belka.txt", "r")
-# f.writelines("Привет белкам!\nОрешки будите?\nВ лесу их много!")
-print(f.readline())
+filename = "belka.txt"
+with open(filename) as file:
+    text = file.read()
+    print(text)
+    print("*************************************************")
+    text1 = text.split()
+    print(text1)
+    print(text1[:3], [4])
 
-
-f.close()
+    while True:
+        sp_list = []
+        if i == text1[:3][4]:
+            sp_list.append(i)
+        print(sp_list)
