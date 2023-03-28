@@ -1,14 +1,8 @@
-filename = "belka.txt"
-with open(filename) as file:
-    text = file.read()
-    print(text)
-    print("*************************************************")
-    text1 = text.split()
-    print(text1)
-    print(text1[:3], [4])
 
-    while True:
-        sp_list = []
-        if i == text1[:3][4]:
-            sp_list.append(i)
-        print(sp_list)
+with open("jornal.txt",  "w") as file:
+    file.write("Шилов Роман Георгиевич - 5"
+                "Иванов Евгений Егоревич - 3"
+                "Скрябин Станислав Александрович - 4"
+                "Арнаутов Павел Николаевич - 2"
+                "Шамангалиев Айдар Джавдетович - 2"
+               )
